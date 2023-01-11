@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">searchMap</string>
+    <string name="kakao_app_key">9405a01042c532a0a97110f407b1ca89</string>
+    <string name="kakao_restAPI_key">a6ed821405741d1af744b179bc3bc4a4</string> <!-- 카카오 주소 검색에 필요한 Rest API Key -->
+    <string name="kakao_scheme">kakaof53cfdd5595e4f640477d5f77e56f2be</string>
+    <string name="kakaolink_host">kakaolink</string>
+</resources>
