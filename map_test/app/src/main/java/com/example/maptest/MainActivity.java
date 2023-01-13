@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity
 
     Location mCurrentLocatiion;
     LatLng currentPosition;
-    LatLng testPosition = new LatLng(37.5727, 127.0441);
+    LatLng testPosition = new LatLng(37.5727, 127.0441); // 임시 위도와 경도를 입력받는다.
 
 
     private FusedLocationProviderClient mFusedLocationClient;
@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity
         Button button = (Button)findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v) { // 장소 검색 클릭시 재 수정되면서 탐색한다.
 //                showPlaceInformation(currentPosition);
                 showPlaceInformation(testPosition);
                 MarkerOptions markerOptions = new MarkerOptions();
@@ -204,6 +204,7 @@ public class MainActivity extends AppCompatActivity
 
         mMap.getUiSettings().setMyLocationButtonEnabled(true);
 
+// 앱 시작시 test 위도와 경도를 통해 주변 500미터 내의 음식집을 검색한다.
         showPlaceInformation(testPosition);
         MarkerOptions markerOptions = new MarkerOptions();
         markerOptions.position(testPosition);
